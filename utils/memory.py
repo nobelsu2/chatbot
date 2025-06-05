@@ -1,7 +1,14 @@
 import redis
 import json
+import streamlit as st
 
-r = redis.Redis(host='localhost', port=6379, db=0)
+r = redis.Redis(
+    host=st.secrets["redis"]["host"],
+    port=st.secrets["redis"]["port"],
+    password=st.secrets["redis"]["password"],
+    ssl=True
+)
+
 
 def getHistory(user_id):
     messages = r.lrange(f"chat:{user_id}", 0, -1)
