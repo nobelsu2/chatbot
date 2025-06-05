@@ -5,6 +5,8 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "chonkie[hub]>=1.0.9",
+    "chonkie[hub,openai]>=1.0.9",
+    "chromadb>=1.0.12",
     "markitdown[pdf]>=0.1.2",
+    "openai>=1.84.0",
 ]
