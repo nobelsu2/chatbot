@@ -2,7 +2,7 @@ from openai import OpenAI
 from os import getenv
 from dotenv import load_dotenv
 
-def rewrite_query(query, conversations: list[dict]):
+def rewriteQuery(query, conversations: list[dict]):
     load_dotenv()
     model = OpenAI(
         api_key=getenv("OPENAI_API_KEY")
