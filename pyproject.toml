@@ -10,4 +10,5 @@ dependencies = [
     "markitdown[pdf]>=0.1.2",
     "openai>=1.84.0",
     "redis>=6.2.0",
+    "streamlit>=1.45.1",
 ]
