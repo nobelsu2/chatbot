@@ -6,7 +6,7 @@ r = redis.Redis(
     host=st.secrets["redis"]["host"],
     port=st.secrets["redis"]["port"],
     password=st.secrets["redis"]["password"],
-    ssl=True
+    ssl=False
 )
 
 
